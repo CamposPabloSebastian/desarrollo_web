@@ -1,0 +1,7 @@
+.vavegador{
+    padding-left: 0;
+}
+.navegador li{
+    display: inline-block;
+    text-decoration: none;    
+}
