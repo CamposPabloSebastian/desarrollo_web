@@ -1,0 +1,15 @@
+body{
+    background-color: steelblue;
+    font-family: Verdana;
+    text-align: center;
+}
+
+body h1{
+    color: tomato;
+    background-color: black;
+}
+
+body p{
+    text-align: center;
+    color: blanchedalmond;
+}

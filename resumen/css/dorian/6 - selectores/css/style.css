@@ -1,0 +1,69 @@
+/* Selectores */
+
+/* selector universal */
+*{
+    background-color: lightcoral;
+}
+
+/* selector de etiqueta */
+h1{
+    background-color: lightslategray;
+}
+
+li{
+    display: inline-block;
+}
+
+/* selector id, no es recomendable dar estilos con Id*/
+#title{
+    background-color: lightsteelblue;
+}
+
+.titleClase{
+    background-color: lightyellow;
+}
+
+.text{
+    background-color: lightsalmon;
+}
+
+/* selector otros 
+en este caso todos los atributos de href se colorean
+
+puedo utilizar atributo=valor
+
+puedo utilizar comprovacion de valor. atibuto^="valor". pregunta que si comienza con ese valor aplique los cambios
+
+puedo utilizar atributo*=valor. hace que se apliquen los cambios independientemente de donde este el valor especificado. (el anterior con ^ es si comienza con ese valor, este con * es si lo contiene)
+
+puedo utilizar atributo$=valor. se aplican los cambios si el valor de href termina con lo indicado
+
+puedo utilizar atributo|=valor. se aplican los cambios si el idioma es el indicado
+
+*/
+[href]{ /*aplica los cambios a los atributos href*/
+    background-color: brown;
+}
+
+[href="#item-2"]{ /*si href es igual al valor aplica los cambios*/
+    background-color: chartreuse;
+}
+
+[href^="i"]{  /*si href comineza con # aplica los cambios, en el html cominezxa por i, mirarlo*/
+    background-color: cyan;
+}
+
+[href*="k"]{  /*si el valor de href contiene la K aplica los cambios*/
+    background-color: red;
+}
+
+[href$="5"]{  /*si el valor de href termina con 4 aplica los cambios*/
+    background-color: yellow;
+}
+
+[lang|="en"]{  /*si el idioma es english se aplican cambios*/
+    background-color: green;
+}
+
+
+/* selector */

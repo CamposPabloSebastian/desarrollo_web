@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <!--LABEL es para escribir el nombre del campo a rellenar, lleva el atributo for al que se le indica un id para relacionarlo con el label correspondiente-->
+        <p>INPUT CON BOTON BUTTON</p>
+        <label for="name">Nombre del campo input</label>
+        <input id="name">
+        <button>Boton enviar</button>
+        <BR></BR>
+        <BR></BR>
+        <p>ENTRADAS DE TIPO FECHA</p>
+        <p>Input tipo date</p>
+        <input type="date">
+        <p>Input tipo "Datetime-local" (no funciona en firefox) </p>
+        <input type="datetime-local">
+        <p>Input tipo TIME</p>
+        <input type="time">
+        <p>Input tipo month</p>
+        <input type="month">
+        <p>Input tipo semana</p>
+        <input type="week">
+        
+
+        <p>Input tipo busqueda</p>
+        <label> Search
+            <input type="search">
+        </label>
+        <p>Input tipo telefono</p>
+        <label> telefono
+            <input type="tel">
+        </label>
+        <p>Input tipo correo</p>
+        <label> email
+            <input type="email">
+        </label>
+        <p>Input tipo contraseña</p>
+        <label> password
+            <input type="password">
+        </label>
+        <p>Input tipo url</p>
+        <label> url
+            <input type="url">
+        </label>
+        <p>Input tipo color</p>
+        <label> color
+            <input type="color">
+        </label>
+        <p>Input tipo number</p>
+        <label> numero
+            <input type="number">
+        </label>
+        <p>Input tipo range "rango"</p>
+        <label> rango
+            <input type="range" step="5" min="0" max="50">
+        </label>
+        <p>Input tipo reset</p>
+        <label> reset
+            <input type="reset">
+        </label>
+        <p>Input tipo texto</p>
+        <label> texto
+            <input type="text">
+        </label>
+        <BR></BR>
+        <BR></BR>
+        <h1>INPUT PARA SELECCIONAR ELEMENTOS DE UNA LISTA DE OPCIONES RELACIONADAS</h1>
+        <p>Input tipo radio</p>
+        <label >masculino
+            <input type="radio" name="gender" checked value="maculino"> <!--al poner el atrubuto name con valor genero le decimos al nav que las 3 opciones pertenecen al mismo grupo, con chequed genera que 1 opcion salga seleccionada, el value es para que despues el servicor sepa que se selecciono.
+            si punoemos el checked en varios input como son radio solo tomara 1-->
+        </label>
+        <label >femenino
+            <input type="radio" name="gender"  value="femenino" checked>
+        </label>
+        <label >desconocido
+            <input type="radio" name="gender"  value="desconocido">
+        </label>
+
+        
+        <p>Input tipo checkbox</p>
+        <label >html
+            <input type="checkbox" name="lenguages" value="html" checked>                       
+        </label>
+        <label >css
+            <input type="checkbox" name="lenguages" value="html">                       
+        </label>
+        <label >js
+            <input type="checkbox" name="lenguages" value="html">                       
+        </label>
+
+        <br>
+        <br>
+        <h1>AHORA TRABAJAMMOS CON ELEMENTOS SELECCIONABLES</h1>
+        <p>
+            son una mezcla de checkbox y radio, nos permite trabajar con ambos
+        </p>
+        <ul>
+            <li>Opcion simple</li>            
+            <!--el atributo multiple nos permite seleccionar de la lista mas de 1 elemento-->
+            <select name="lenguajes" multiple>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JS</option>
+            </select>
+
+            <li>Opcion avanzada para muchas opciones</li>
+            <!--si tenemos muchass opcuines podemos agruparlas por categorias con la eti optgroup-->
+            <select name="mascotas">
+                <optgroup label="4 patas">
+                    <option value="perro">perro</option>
+                    <option value="gato">gato</option>
+                    <option value="conejo">conejo</option>
+                    <option value="hamster">hamster</option>                   
+                </optgroup>
+                <optgroup label="aves">
+                    <option value="loro">loro</option>
+                    <option value="canario">canario</option>
+                </optgroup>
+                <optgroup label="otros">
+                    <option value="serpiente">serpiente</option>
+                    <option value="tarantula">tarantula</option>
+                </optgroup>
+            </select>
+        </ul>
+
+        <br>
+        <br>
+        <h2>AHORA TRABAJAMMOS CON ELEMENTOS SELECCIONABLES</h2>
+        <p>      
+            Vemos los DATALIST. Si milas a los Selec pero con filtro
+        </p>
+        <input type="list" list="mascotas3">
+        <datalist id="mascotas3">
+            <option value="perro">perro</option>
+            <option value="gato">gato</option>
+            <option value="conejo">conejo</option>
+            <option value="hamster">hamster</option>
+            <option value="loro">loro</option>
+            <option value="canario">canario</option>
+            <option value="serpiente">serpiente</option>
+            <option value="tarantula">tarantula</option>
+        </datalist>
+
+        <br>
+        <br>
+        <h2>AHORA TRABAJAMMOS CON MAS ELEMETOS PARA FORMILARIOS</h2>
+        <p>      
+            Vemos los FIELSET que sirve para agrupar elementos dentro de un formulario            
+        </p>
+        <p>LEGEND es para darle un titulo al fieldset</p>
+        <p>METER representa un valor dentro de un rango conocido</p>
+        <p>FILE es un input que se utiliza para cargar archivos y enviarlos desde un formulario</p>
+        <p>METER representa un valor dentro de un rango conocido</p>
+        <p>PROGREGG representa el progreso de una tarea</p>
+        <p>TEXTAEREA se ultiza para introducir un texto en un formulario</p>
+        <fieldset>
+            <legend>datos personales</legend>
+            <label for="name">nombre</label>
+            <input type="text" id="name">
+            <label for="surname">apellido</label>
+            <input type="text" id="surmame">
+        </fieldset>
+        <p>aca puedo cargar el archivo con el input file</p>
+        <input type="file">
+        <label for="fuel">combustible</label>
+        <meter id="fuel" min="0" max="100" value="85" low="60" high="75" optimum="50">
+        </meter>
+
+        <label for="task">tarea 1</label>
+        <progress id="task" max="100" value="75"></progress>
+        <label for="mensaje">mensaje</label>
+        <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
+
+                
+    </form>
+</body>
+</html> 

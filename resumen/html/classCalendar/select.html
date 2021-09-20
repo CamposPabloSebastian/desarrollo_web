@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+</head>
+<body>
+    <main>
+        <!--la etiqueta selec es para crear el cajon de opciones cursos-->
+        <!--la eti option carga las opciones que tendra el cajon, para que salgan debe estar cargada entre la apertura y cierre, el atributo value es para que la opccion selec la envuie a la bbdd-->
+        <span>este es un Select basico -></span>
+        <select name="cursos" id="pais">
+            <option value="javascript">javascript</option>
+            <option value="html5">html5</option>
+            <option value="css3">css3</option>
+            <option value="web basico">web basico</option>
+        </select>
+        <br>
+        <SPAn>este es un selec mejorado -></SPAn>
+
+        <!--esta es la mejor opcion para crear el SELECT-->
+        <input list="cursos">
+        <datalist id="cursos">
+            <option value="javaScript"></option>
+            <option value="html5"></option>
+            <option value="cs3"></option>
+            <option value="web standars"></option>
+        </datalist>
+    </main>
+</body>
+</html>

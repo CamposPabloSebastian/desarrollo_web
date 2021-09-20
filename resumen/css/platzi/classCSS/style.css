@@ -1,0 +1,14 @@
+/*selector de elemento*/
+p{
+    color: red;
+}
+
+/*selector de clase*/
+.parrafo{
+    color: chartreuse;
+}
+
+/*selector de id*/
+#texto{
+    color: darkmagenta;
+}

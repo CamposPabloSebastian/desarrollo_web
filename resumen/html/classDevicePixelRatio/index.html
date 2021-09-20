@@ -1,0 +1,39 @@
+<!--
+    DPR (Device pixel ratio)
+    Es la relacion que existe e/pixeles reales que tiene el dispositivo y los pixeles que tenemos disponibles para pintar.
+    "para adaptar una web a un movil (responsive)"
+     viewport es el espacio disponible para pintar (mirar en pag - what is my viewport)
+     la parte para pintar es el cuadro disponible que queda desde donde termina barra navegador hasta abajo (suele ser menos que el alto de pantalla), y al ancho mayormente es al mismo que pantalla. Importnte, si tenemos la ventana minimizada las medidas reducen ya que se toma el area donde trabajamos (el navegador)
+
+
+     EN ESTE PROYECTO EL NAVEGADOR CARGARA LA IMAGEN CORRESPONDIENTE DEPENDIENDO EL DEVICE PIXEL RATIO
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <!--las etiquetas de imagen normalmente vienen con atributoo src.
+    pra trabajar con device pixel ratio usamos srcset (al cual le pasamos las distintas rutas dependiendo el ratio, separado por comas)
+    Si miramos al final esta 3l 3x, eso quiere decir que la portadaMobil e¡se cargara en 3x, podemos pornerlo en 2. (es cuando hacemos zoom)-->
+    <img srcset="./portada.jpg, ./portadaMobil.jpg 3x"alt="">
+    <!--
+        Si el navegador no sorporta webp podemos hacer esto (explorer no soporta webp)
+        <img srcset="
+        ./portada.webp, 
+        ./portada.jpg, 
+        ./portadaMobil.webp, 
+        ./portadaMobil.jpg 3x"
+        alt="">
+        Aca lo que hago es poner las rutas duplicadas pero con extencion distinta
+        si el navegador no sorporta el srcset podemos agregar src como escapatoria
+    -->
+</body>
+</html>

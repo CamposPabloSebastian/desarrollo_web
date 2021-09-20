@@ -1,0 +1,44 @@
+
+/*SELECTOR DE CLASE
+Aca le doy estilo a clase main-nav, osea a todo lo contenido por la etiqueta que contiene la clase main-nav*/
+.main-nav{
+    margin-top: 10px;
+    list-style: none;/*quita el item a la lista*/
+    padding-left: 0;
+    background-color: #13a4a4;
+}
+ /*SELECTOR DE CLASE*/
+.main-nav__item{
+    display: inline-block;    /*coloca los elementos del navegador en horizontal*/
+
+}
+
+
+/* SELECTOR DE CLASE ESPECIFICO PARA UNA ETIQUETA DENTRO DE ESA CLASE
+A tolas las etiquetas a dentro de main-nav__item les doy estilo que degino aqui*/
+.main-nav__item a{
+    color: white; /*coloca las letras en color especficado*/
+    padding: 5px; /*genera un padding de 5px alrededor de todo el elemento. Osea cada etiqueta a. Recordar que si quiero en una eposicion especifica pongo paddig-left, etc*/
+    border-radius: 2px; /*genera que el padding generado tenda los bordes redondeados*/
+    text-decoration: none;/*quita el subayador de mis elementos (decoracion)*/ 
+}
+
+/*SELECTOR PSEUDOCLASE
+cambia de color el elemento en determinada accion, es este caso cuando paso el mouse por encima cambia de color*/
+.main-nav__item a:hover{
+    color: tomato;
+}
+
+/*SELECTOR PSEUDOCLASE
+cambia de color el elemento en determinada accion, es este caso cuando hago click sobre el elemento. Lo retorna al volver a hacer click*/
+.main-nav__item a:active{
+    color: violet;
+}
+
+/*SELECTOR PSEUDOELEMENTO
+a diferencia de psudoclase este se llama con doble 2 puntos (::)
+En este caso hacemos que despues del elemento a agregar el content ( | ) por lo que separa los elememntos del navegador con barras o lo que elija
+*/
+.main-nav__item a::after{
+    content: "  |  ";
+}
