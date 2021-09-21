@@ -66,4 +66,36 @@ puedo utilizar atributo|=valor. se aplican los cambios si el idioma es el indica
 }
 
 
-/* selector */
+/* SELECTORES COMPUESTOS*/
+/* selector agrupado
+se puede cargar todas los elementos separados por comas */
+.text-1, .text-2, .text-3{
+    background-color: blue;
+}
+
+/* selectores combinadores 
+selector descendiente*/
+div .title-2{ /* el title-2 se denomina hijo del div*/
+    background-color: teal;
+}
+
+/* selectores combinadores 
+selector de hermano (nos permite seleccionar el elemento siguiente, los hermoanos son los elementos que estan en el mismo nivel de sangria)*/
+.textoHermano-1 + .textoHermano-2{ /*podemos colocar la etiqueta o como clase, etc. osea podria poner en vez de textoHermano-1 su etiqueta <p>*/
+    background-color: black;
+    /*cave destacar que seleccionamos el hermano inmeditamente despues, solo ese. no podemos hacer saltos*/
+}
+
+
+/* selectores combinadores 
+selector de hermanos siguientes*/
+.h3-hermano-siguiente ~ p{ /*dice que se seleccionen todos los hermanos siguientes a h3 que sean <p>*/
+    background-color: red;
+}
+
+/* selectores combinadores 
+selector de hijo directo*/
+.container > p{ /*dice que se seleccionen todos los hermanos siguientes a h3 que sean <p>*/
+    background-color: yellow;
+    /* selecciona los p dentro de la clase containar, pero no todos los p, si no los hijos directos. vemos que hay otro p mas, pero esta dentro de otro div, por lo tanto seria como nieto, por ende no lo selecciopna */
+}

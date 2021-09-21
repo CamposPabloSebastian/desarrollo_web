@@ -1,0 +1,71 @@
+/* 
+COMO FUNCIONA CSS?
+Especificidad -< establece como de especifico es un selector para saber que estilo aplicar.
+El calculo se realiza con la sig formula:
+
+etiqueta y pseudoelementos = 001
+clases, atributos, psudoclases = 010
+id = 100
+estilos en linea (osea los estilos puestos dentro de las etiquetas, directo) = 1000
+!important = gana a todo, pero rompe la especificidad del navegador.
+
+ PARA COMPROBAR NUESTRO CSS CSS Specificity Graph GeneratoR
+*/
+
+
+h1{ /* 001 */
+    background-color: red;
+    color: cyan;
+    font-size: 10px;
+}
+
+.title{ /* 010 */
+    background-color: blue;
+}
+
+#title{ /* 100 */
+    background-color: green;
+}
+
+h1.title{ /* 011 */
+    background-color: yellow;
+}
+
+h1#title{ /* 101 */
+    background-color: teal
+}
+
+h1.title#title{ /* 111 */
+    background-color: tomato;
+}
+
+/* 
+CASCADA -> Funciona siempreque la especificidad sobre el elemento sea la misma.
+
+Herencia -> Capacidad que tienen algunos elementos de heredad algunas propiedades de sus elementos contenedores (padres, abuelos, etc)
+
+*/
+
+.text{
+    color: red;
+}
+/* Como ejemplo vemos que en el titulo h1 dentro tengo un span, pero que se ve de igual manera en el navegador, eso es porque hereda propiedades de h1, como asi tambien el color, etc que le dimos al titulo. Pero no todas las propiedades se heredad, o no todos lo elementos heredad de sus padres. ej:
+En el <p class="text"> contenemos un ancla, que si miramos el navegador se ve distinto, eso es xq no hereda de su padre por caracteristicas de ancla que debe resaltar 
+*/
+
+/* pero si queremos forzar la herencia, se suele utilizar inherit.
+Veremos que el ancla toma las propiedades del p, en este caso el color. (al tener inherit logramos que si cambiamos propiedades del p, a las heredara) */
+.link{
+    color: inherit;
+}
+
+/* 
+Para trabajar con herencia inversa a inherit, osea no queremos que herede de su padre usamos initial, segunda regla
+ */
+ .list{ /*aca le damos un estilo a la ul*/
+     color: green;
+ }
+
+ .list-item-extra{ /* pero aca le quitamos la herencia al li de su padre ul. con inicial logramos que vuelva a su estado inicial, default*/
+     color: initial;
+ }

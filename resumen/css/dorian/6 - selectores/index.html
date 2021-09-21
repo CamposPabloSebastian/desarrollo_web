@@ -7,17 +7,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>    
-    <h1>Selectores</h1>
+<body>
+
+    <h1>SELECTORES SIMPLES</h1>
     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione exercitationem beatae optio libero non error qui maiores, est tempore suscipit. Possimus laudantium quas voluptatibus voluptates? Dolorum nobis quidem accusamus!</p>
 
-    <h1 id="title">Selectores id</h1>
+    <h2 id="title">Selectores id</h2>
     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione exercitationem beatae optio libero non error qui maiores, est tempore suscipit. Possimus laudantium quas voluptatibus voluptates? Dolorum nobis quidem accusamus!</p>
 
-    <h1 class="titleClase">Selectores id</h1>
+    <h2 class="titleClase">Selectores de clase</h2>
     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione exercitationem beatae optio libero non error qui maiores, est tempore suscipit. Possimus laudantium quas voluptatibus voluptates? Dolorum nobis quidem accusamus!</p>
-
-
     <ul>
         <li><a href="#item-1">Datos personales</a></li>
         <li><a href="#item-2">Experiencia laboral</a></li>
@@ -25,7 +24,68 @@
         <li><a href="#itemk-4">Perfiles Sociales</a></li>
         <li><a href="#item-5">Perfiles Sociales</a></li>
     </ul>
-
+    <h2 class="titleClase">Selectores otros</h2>
     <p lang="en">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione exercitationem beatae optio libero non error qui maiores, est tempore suscipit. Possimus laudantium quas voluptatibus voluptates? Dolorum nobis quidem accusamus!</p>
+
+
+    <!--**********************************************************************************************************-->
+    
+    
+    <h1>SELECTORES COMPUESTOS</h1>
+
+    <h2>Selector agrupado</h2>
+    <p class="text-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione exercitationem beatae optio libero non error qui maiores, est tempore suscipit. Possimus laudantium quas voluptatibus voluptates? Dolorum nobis quidem accusamus!</p>
+    
+    <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione exercitationem beatae optio libero non error qui maiores, est tempore suscipit. Possimus laudantium quas voluptatibus voluptates? Dolorum nobis quidem accusamus!</p>
+
+    <p class="text-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione exercitationem beatae optio libero non error qui maiores, est tempore suscipit. Possimus laudantium quas voluptatibus voluptates? Dolorum nobis quidem accusamus!</p>
+    
+    
+    <h2>Selectores combinadores</h2>
+    <h2 class="title-2">Lorem ipsum dolor (este no tomara el estilo de div title-2 xq esta fuera del div)</h2>
+    <div>
+        <h2 class="title-2">Lorem ipsum dolor</h2>
+        
+        <p class="text-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione exercitationem beatae optio libero non error qui maiores, est tempore suscipit. Possimus laudantium quas voluptatibus voluptates? Dolorum nobis quidem accusamus!</p>
+        
+        <h2>Lorem ipsum dolor</h2>
+        <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione exercitationem beatae optio libero non error qui maiores, est tempore suscipit. Possimus laudantium quas voluptatibus voluptates? Dolorum nobis quidem accusamus!</p>
+
+        <p class="text-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione exercitationem beatae optio libero non error qui maiores, est tempore suscipit. Possimus laudantium quas voluptatibus voluptates? Dolorum nobis quidem accusamus!</p>
+    </div>
+
+    <h2>selectores de hermano</h2>
+    <div>
+        <h2>Lorem ipsum dolor</h2>
+        <p class="textoHermano-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione exercitationem beatae optio libero non error qui maiores, est tempore suscipit. Possimus laudantium quas voluptatibus voluptates? Dolorum nobis quidem accusamus!</p>
+
+        <p class="textoHermano-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione exercitationem beatae optio libero non error qui maiores, est tempore suscipit. Possimus laudantium quas voluptatibus voluptates? Dolorum nobis quidem accusamus!</p>
+    </div>
+
+    <h2>selectores de hermanos siguientes</h2>
+    <div>
+        <h2>Lorem ipsum dolor</h2>
+        <h3 class="h3-hermano-siguiente">este es el h3</h3>
+        <p class="textoHermano-sig-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione exercitationem beatae optio libero non error qui maiores, est tempore suscipit. Possimus laudantium quas voluptatibus voluptates? Dolorum nobis quidem accusamus!</p>
+        <h4>este es el h4</h3>
+        <p class="textoHermano-sig-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione exercitationem beatae optio libero non error qui maiores, est tempore suscipit. Possimus laudantium quas voluptatibus voluptates? Dolorum nobis quidem accusamus!</p>
+        <h6>este es el h6</h6>
+        <p class="textoHermano-sig-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione exercitationem beatae optio libero non error qui maiores, est tempore suscipit. Possimus laudantium quas voluptatibus voluptates? Dolorum nobis quidem accusamus!</p>
+    </div>
+
+    <h2>Selector de hijo directo</h2>
+
+    <div class="container">
+        <h2>Lorem ipsum dolor</h2>
+        <h3>este es el h3 debntro del div 1</h3>
+        <p class="textoHermano-sig-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione exercitationem beatae optio libero non error qui maiores, est tempore suscipit. Possimus laudantium quas voluptatibus voluptates? Dolorum nobis quidem accusamus!</p>
+        <div>
+            <h4>este es el h4 dentro del div dentro del div 1</h3>
+                <p class="textoHermano-sig-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione exercitationem beatae optio libero non error qui maiores, est tempore suscipit. Possimus laudantium quas voluptatibus voluptates? Dolorum nobis quidem accusamus!</p>
+            <h6>este es el h6</h6>
+        </div>
+        <p class="textoHermano-sig-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione exercitationem beatae optio libero non error qui maiores, est tempore suscipit. Possimus laudantium quas voluptatibus voluptates? Dolorum nobis quidem accusamus!</p>
+    </div>
+
 </body>
 </html>
