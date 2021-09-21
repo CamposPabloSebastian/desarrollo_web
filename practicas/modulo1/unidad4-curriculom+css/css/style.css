@@ -1,7 +1,58 @@
-.vavegador{
-    padding-left: 0;
+*{
+    background-color: ivory;
+    font-family: 'Times New Roman';
+    font-size: 25px;
+    border: 10px;
+    
+}
+body{
+    border-style: groove;
+}
+
+.header{
+    background-color: lightblue;
+}
+
+.header h1{
+    text-align: center;
+    font-size: 50px;
+    background-color: lightblue;
+}
+
+.header img{
+    
+}
+
+.navegador{
+    background-color: lightskyblue;
+    text-align: center;
+    
 }
 .navegador li{
+    padding-right: 20px ;
+    background-color: lightskyblue;
     display: inline-block;
-    text-decoration: none;    
+    text-decoration: none;
+    text-align: center;  
 }
+.navegador li a{
+    background-color:gray;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+ /* header{
+     background-color: blue;
+ }
+ nav{
+    background-color: yellow;
+}
+ body{
+    background-color: green;
+}
+
+ main{
+     background-color: violet;
+ } */
