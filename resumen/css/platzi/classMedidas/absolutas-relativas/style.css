@@ -1,0 +1,34 @@
+/*
+Tenemos medidas absolutas y relativas.
+
+Absoluta:
+ el valor de este no cambia y siempre sera el mismo asi la pagina cambie su tamaño, las medidas absolutas son:
+mm = milimetros
+cm = centimetros
+in = pulgada
+pc = picas
+px = pixel
+
+relativas
+estas medidas heredan el tamaño o se basan en algun tamaño que se alla seleccionado y el valor ira cambiando segun si la pagina cambia de tamaño, las medidas relativas son:
+% (porcentaje)
+em (elemento)
+rem (root elemento)
+whith
+higth
+*/
+/*ABSOLUTAS*/
+.absolut-pixel{
+    font-size: 18px; /*medida absoluta*/
+}
+
+/*RELATIVAS*/
+.relative-porcentaje{
+    font-size: 50%; /*medida relativa, 50% del estilo que tiene, si la medida por defecto es 16px, sera de 8*/
+}
+
+.relative-WIDTHH-HIGTH{
+    background-color: red;
+    width:100%;
+    height: 400px;
+}

@@ -1,0 +1,8 @@
+body{
+    font-size: 20px;
+}
+
+/* EM, tomo el tamaño de fuente padre, ej, si es el tam fuenete de 16px su tamaño sera 16*1.5=24px */
+.text-container{
+    font-size: 1.5em;
+}

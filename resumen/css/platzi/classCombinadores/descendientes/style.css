@@ -1,0 +1,4 @@
+div p{ /*Da estilo a todos los descendientes de div*/
+    color: red;
+}
+

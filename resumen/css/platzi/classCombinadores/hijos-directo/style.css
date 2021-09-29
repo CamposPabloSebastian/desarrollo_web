@@ -1,0 +1,4 @@
+div > p{ /*Da estilo a los p hijos directos de div*/
+    color: red;
+}
+

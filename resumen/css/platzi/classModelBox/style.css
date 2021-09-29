@@ -1,0 +1,12 @@
+*{
+    box-sizing: border-box; /* genera que el tamaño maximo lo tenga el border box, y el resto, padding, content se acomede a este size*/
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    width: 100%;
+    height: 500px;
+    border: 10px solid gray;
+    padding: 20px 35px;
+}

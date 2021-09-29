@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    width: 100vw; /*le dice que ocupe el 100% del view-whidth*/
+    height: 100vh;/*le dice que ocupe el 100% del view-higth*/
+    background-color: violet;
+}
+
+section{
+    width: 80vw; /*le dice que ocupara el 80% de nuestro ancho*/   
+    min-width: 320px; /*le establece un tamaño minimo al ancho*/
+    max-width: 500px; /*le establece un tamaño maximo al ancho*/   
+    
+    height: 500px; /*le dice que ocupara 500pixeles de alto*/
+    /* si tenemos un contenido que sobre pasa el alto de mi contenedor padre, (como acabo de hacer con el texto) pordemos reemplzar el el height: 500px por un:
+    min-height: 500px; o el valor que querramos como minimo. esto hace que mientras crezca el contenido, crecera el tamaño del contenedor (section)*/
+    /*tambien podemos controlar el tamaño de la altura con max-heigth = valor*/
+    background-color: red;
+    margin: 0 auto; /*lo centra*/
+}
+/* 
+margin el 0 auto hace esto:
+el 0 es que de arriba y abajo el margen sea 0 y el auto le dice que sea automatico de izquierda/derecha */

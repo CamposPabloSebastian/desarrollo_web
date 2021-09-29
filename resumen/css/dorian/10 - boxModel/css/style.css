@@ -1,0 +1,72 @@
+
+/* MALAS PRACTICAS DEL MARGIN EN VIDEO #22 D. DES... */
+body{
+    background-color: #333;
+    color: #fff;
+}
+
+
+body{
+    
+    /*para quitar nargin de navegador y quie quede pegado a los bordes*/
+    margin: 0;
+}
+header{
+    background-color: red;
+}
+
+.block{    
+    background-color: purple;
+    width: 200px;
+    height: 200px;
+    /* margin: 100px 50px 10px 200px;*/ /*le da los margenes a la caja, recordar que margin es la separacion contra los demas elementos*/
+
+    margin-left: auto; /*calcula el margen izquierdo automaticamente, por lo que manda la caja a la derecja
+    . Por lo que si utilizamos los margin en auto podemos centrar la caja tambien en sentido horizontal o vertical dependiendo cual utilizemos*/
+    padding-top: 100px; /*espacio entre el contenido y el borde superior*/
+    padding-bottom: 100px;/*espacio entre el contenido y el borde inferior*/
+    /* tambien opdemos usalo como margin */
+    padding: 50px 20px 100px 70px;
+
+    /*para que la caja mida lo que querramos usamos content-box*/
+    box-sizing: border-box; /*aplicando esto mi caja medira incluyendo border y padding lo que le dije arriba en ancho y alto, 200 * 200 px. UNA BUENA PRACTICA ES PONERLO EN EL SELECTOR UNIVERSAL*/
+    
+}
+
+/* Los elementos en linea no tienen medidas.
+*/
+.inline{
+    background-color: lightcoral;
+    color: inherit;
+    /*
+    width: 200px;no funcionan xq es en linea
+    height: 200px; 
+    */
+    margin-bottom: 100px; /*no funciona xq solo toma valores horizontales, left y rigth*/
+    margin-left: 100px;
+    padding: 50px 20px 100px 70px; /*en lo s elementos de lines si funcionan todos los paddin  g*/
+
+}
+
+.div-boton{
+    margin-top: 50px;
+    background-color: blue;
+    padding-top: 50px;
+    padding-bottom: 50px;
+   
+}
+
+.boton{
+    padding-top: 50px;
+    padding-top: 50px;
+    padding: 50px 50px 50px 50px; /*puedo usa las 2 de arriba y las otras 2 o hascer esta linea sola dondeincluuyo los otros 4 lados, recordar que esta ultima linea superpone la otra por cascada*/
+    margin-left: 150px;
+    border: 10px solid red;
+    /* border-width: 20px;
+    border-style: solid;
+    border-color: red; 
+    Estas 3 linea es lo mismo que poner la linea border.... con los 3 valores.*/
+    border-right-color: chartreuse; /*apunte de cuardeno explicado, pero basicamente dice que: el borde derecho el color sea chartreuse... podemos hacerlo con cualquiera de los bordes, tanbiem podemos cambiar el style de cada borde y el ancho, como abajo*/
+    border-bottom-width: 30px;
+    
+}

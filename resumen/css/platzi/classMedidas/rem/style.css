@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{ /* lo que hace esto es evitar que haga los calculos de pixeles como antes. que era que mi fuente de html era de 16px por defecto, pero si ponia 1.5 rem es 16*1.5=24px. pero si quiero 20px?
+    ahi es cuando tengo que empezar a calcular.
+    por eso pongo esta declaracion de 62.5% al html*/
+    font-size: 62.5%;
+}
+/* una vez realizado esto las medidas psan a ser asi:
+1 rem = 10px
+1.6 rem = 16x 
+2 rem = 20px
+3.2 rem = 32px
+........
+*/
+
+/* REM- siemnpre hace referencia al estilo que tenga el estilo root, osea el html (mayormente tiene 16px)
+*/
+p{
+    font-size: 1.6rem;
+}
+
+main div{
+    font-size: 2.6rem;
+}

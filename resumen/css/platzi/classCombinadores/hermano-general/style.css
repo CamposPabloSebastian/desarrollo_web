@@ -1,0 +1,4 @@
+h2 ~ p{ /* HERMANO CERCANO: pone en rojo los p cerca de h2, no necesariamente el hermano pegado*/
+    color: red;
+}
+
