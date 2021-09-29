@@ -1,58 +1,57 @@
 *{
-    background-color: ivory;
-    font-family: 'Times New Roman';
-    font-size: 25px;
-    border: 10px;
-    
-}
-body{
-    border-style: groove;
+    box-sizing: border-box;
 }
 
-.header{
-    background-color: lightblue;
+html{
+    margin: 20px;
+    background-color: grey;
 }
+body{    
+    background-color: lightcyan;    
+}
+
 
 .header h1{
-    text-align: center;
     font-size: 50px;
-    background-color: lightblue;
+    text-decoration: underline;
+    text-transform: uppercase;          
+    text-align: center;
+    padding: 30px;
+    background-color: lightgray;
 }
 
 .header img{
+    float: right;
+    margin-right: 10px;
+    border: 2px solid grey;
     
 }
 
-.navegador{
-    background-color: lightskyblue;
+.navigator{    
     text-align: center;
-    
+    margin-top: 50px;  
 }
-.navegador li{
-    padding-right: 20px ;
-    background-color: lightskyblue;
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;  
+
+
+.navegador-list li{    
+    display: inline;
+    padding: 0px 60px;
+    text-align: center;
 }
-.navegador li a{
-    background-color:gray;
+
+.navegador-list a{    
     text-decoration: none;
-    padding-left: 10px;
-    padding-right: 10px;
+    position: inherit;
+    border: 2px solid lightgray;
     border-radius: 5px;
+    padding: 2px 4px;
 }
 
- /* header{
-     background-color: blue;
- }
- nav{
-    background-color: yellow;
-}
- body{
-    background-color: green;
+.main{
+    padding: 0px 10px 10px 15px;
+    margin-top: 50px;
 }
 
- main{
-     background-color: violet;
- } */
+h2{
+    background-color: lightgrey;
+}
