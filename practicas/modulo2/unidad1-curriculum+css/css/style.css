@@ -1,0 +1,117 @@
+/* 
+font-family: 'Pompiere', cursive;
+font-family: 'Staatliches', cursive;
+
+ */
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    margin: 20px;
+    background-color: grey;
+}
+body{    
+    background-color: lightcyan;
+    font-family: 'Pompiere', cursive;
+}
+
+
+.header h1{
+    font-family: 'Staatliches', cursive;
+    font-size: 50px;
+    text-decoration: underline;
+    text-transform: uppercase;          
+    text-align: center;
+    padding: 30px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,16,1) 0%, rgba(0,212,255,1) 100%);
+    box-shadow: 0 15px 25px;    
+}
+
+.header img{
+    float: right;
+    width: 120px;
+    height: 120px;
+    margin-right: 10px;
+    border: 2px solid grey;
+    border-radius: 100px;
+    box-shadow: 0 15px 25px;   
+}
+
+.navigator{    
+    text-align: center;
+    margin-top: 50px;  
+}
+
+
+.navegador-list li{    
+    display: inline;
+    padding: 0px 80px;
+    text-align: center;
+}
+
+.navegador-list a{    
+    text-decoration: none;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    padding: 2px 4px;
+    background-color:  rgb(34,193,195);
+    box-shadow: 0 5px 25px black;
+}
+
+.main{
+    padding: 0px 10px 10px 15px;
+    margin-top: 50px;
+}
+
+.main p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h2{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,16,0.4654236694677871) 0%, rgba(0,212,255,0.47102591036414565) 100%);
+    padding: 5px;
+    box-shadow: 0 8px 25px;   
+}
+
+table{
+    border-spacing: 20px 5px;
+}
+
+th{
+    border-bottom: 1px solid black;
+    background-color: rgba(10, 234, 241, .12);
+}
+
+.social{
+    padding-left: 20px;    
+}
+
+.social li{
+    font-size: 30px;    
+    list-style: none;          
+    margin-bottom: 10px;
+    display: list-item;
+}
+
+i{
+    font-size: 30px;
+}
+
+.icon-linkedin{
+    color: blue;
+}
+
+.icon-github{
+    color: black;
+}
+
+.social a{
+    margin-left: 10px;  
+    text-decoration: none;
+    font-size: 16px;    
+}
