@@ -1,0 +1,40 @@
+.text{
+    text-align: right; /*alineacion izq (pordefecto), der, cent, justificada del texto*/
+}
+
+.box{
+    background-color: #666;
+    width: 100px;
+    padding: 10px 0;
+    margin: 20px 0;
+    border: 2px solid lightcoral;
+
+    text-align: center; /*centado de contenido*/
+
+    margin-left: auto; /*centado de caja/contenedor*/
+    margin-right: auto;
+
+}
+
+.link{
+    background-color: lightseagreen;
+    text-align: center; /*como link es de linea text align no funciona*/
+    display: block; /*lo convierto a bloque para que funcione la alineacion*/
+}
+
+.img{
+    /**/
+    text-align: center; /*no funciona porque es en linea*/
+    display: block; /*lo convierto en bloque para porder usar margenes horizonrales*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*ahora si la imagen esta dentreo de un contenedor si podemos usar text-aling*/
+.img-contenedor{
+    background-color: mediumpurple;
+    text-align: center;
+}
+
+

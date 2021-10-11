@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+
+body{    
+    background-color: #333;
+    color: #fff;
+}
+
+.text{
+    background-color: lightcoral;
+    /* display: none; */ 
+}
+
+.link{
+    background-color: white;
+    /* display: block; me lo convierte en elemento de bloque, por lo que ahora le puedo aplicar medidas verticales */
+    /* display: inline-block; sigue como  elem de linea pero como es combinado con bloque admite medidas y margenes verticales */
+    margin-top: 10px;
+    height: 30px;
+}

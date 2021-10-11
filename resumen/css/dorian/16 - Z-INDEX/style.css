@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #333;
+    color: #fff;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+}
+
+.contenedor-box{
+    width: 200px;
+    height: 200px;
+    background-color:purple;
+}
+
+.box-1{
+    background-color: lightcoral;
+}
+
+.box-2{
+    background-color: lightgreen;
+    position: relative;
+    top: 50px; /*separa 50px desde top desde su posicion orig, si miramos se pone por delante de mi box 3, es xq en el html aparece antes el box 2, se puede remediar con z-index, pero para esto la caja que queremos traer hacia adelante tiene que estar posicionada, le pongo relative en este caso al box 3*/
+    /* z-index: 1; */
+}
+
+.box-3{
+    background-color: lightskyblue;
+    position: relative;
+}
+

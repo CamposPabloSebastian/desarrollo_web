@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #333;
+    color: #fff;
+    padding-top: 60px; /*para bajar el body y ver el h1*/
+}
+
+.header{
+    text-align: center;
+    background-color: lightskyblue;
+    color: orangered;
+    /* position: sticky;
+    top: 0px; le dice que cuando el .header este a 0px del top comience con sticky, que es similar al fixed */
+    height: 300px;
+}
+
+img{
+    display: block;
+}
+
+.menu{ /*genera que el menu tenga sticky, pero ojo, sobre su elemento de referencia, el header, osea hace sticky sobre el alto del header, 300px, si no tiene alto no hace nada*/
+    position: sticky;
+    top: 0;
+}
+
+h2{
+    background-color: orangered;
+}
+
+.article-title{ /*genero el sticky en cada h2 de mis article, mirar como cambian los titulos, eso es porque cada article tiene su titulo y cuando termino articulo comineza otro con su nuevo titulo*/
+    position: sticky;
+    top: 0;
+}
+

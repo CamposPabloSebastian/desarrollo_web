@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: royalblue;   
+}
+
+div{
+    text-align: center;
+    padding: 10px;
+}
+
+.hijo{
+
+    margin: 50px auto;
+    background-color: lightblue;    
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+.padre{
+    margin: 0px auto;
+    background-color: red;
+    width: 200px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 50px;    
+    position: relative;
+    left: 150px;
+    top: 30px;
+}
+
+

@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #333;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+}
+
+.box-1{
+    background-color: lightcoral;
+    position: relative;
+    left: 100px;
+    top: 100px;
+}
+
+.box-2{
+    background-color: lightgreen;
+    position: relative;
+    top: 25px;
+    bottom: 25px; /*no funciona xq existe ya una media en el eje y, y la priooridad es de top*/
+}

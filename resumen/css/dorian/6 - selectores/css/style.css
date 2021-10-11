@@ -19,10 +19,12 @@ li{
     background-color: lightsteelblue;
 }
 
+/*Selector de clase*/
 .titleClase{
     background-color: lightyellow;
 }
 
+/*Selector de clase*/
 .text{
     background-color: lightsalmon;
 }
@@ -32,7 +34,7 @@ en este caso todos los atributos de href se colorean
 
 puedo utilizar atributo=valor
 
-puedo utilizar comprovacion de valor. atibuto^="valor". pregunta que si comienza con ese valor aplique los cambios
+puedo utilizar comprobacion de valor. atibuto^="valor". pregunta que si comienza con ese valor aplique los cambios
 
 puedo utilizar atributo*=valor. hace que se apliquen los cambios independientemente de donde este el valor especificado. (el anterior con ^ es si comienza con ese valor, este con * es si lo contiene)
 
@@ -95,7 +97,7 @@ selector de hermanos siguientes*/
 
 /* selectores combinadores 
 selector de hijo directo*/
-.container > p{ /*dice que se seleccionen todos los hermanos siguientes a h3 que sean <p>*/
+.container > p{
     background-color: yellow;
     /* selecciona los p dentro de la clase containar, pero no todos los p, si no los hijos directos. vemos que hay otro p mas, pero esta dentro de otro div, por lo tanto seria como nieto, por ende no lo selecciopna */
 }
