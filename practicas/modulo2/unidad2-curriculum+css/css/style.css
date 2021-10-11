@@ -1,0 +1,141 @@
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    margin: 20px;
+    background-color: grey;
+}
+
+body{    
+    background-color: lightcyan;
+    font-family: 'Pompiere', cursive;
+    font-size: 30px;
+    border-radius: 2%;
+}
+
+.header{
+    height: 200px;    
+    margin-bottom: 30px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,16,1) 0%, rgba(0,212,255,1) 100%);
+    box-shadow: 0 15px 25px;
+    overflow: hidden; /*pra no desbordar el header con el h1*/
+}
+
+
+.titulo-1{
+    /* font-family: 'Staatliches', cursive; */
+    margin: 0;
+    height: inherit;
+    text-align: center;
+    padding-top:45px;
+    font-size: 110px;
+    text-transform: uppercase;
+}
+
+.navigator{
+    position: relative;
+    height: 150px;
+    margin-bottom: 30px;
+}
+
+.navegador-list{
+    overflow:hidden; /*para no desbordar con su contenedor padre (navigator)*/
+    margin: 0;
+    display: inline-block;
+    width: 90%;
+    height: inherit;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+
+.navegador-list li{    
+    display:inline-block; /*hace que mis elementos del nav sean de linea y por ende aparecen en horizontal, uno al lado del otro*/;    
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+
+.navegador-list a{    
+    text-decoration: none;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    padding: 6px 20px;
+    background-color:  rgb(34,193,195);
+    box-shadow: 0 5px 25px black;
+}
+
+
+nav img{    
+    border-radius: 10px;
+    box-shadow: 0 15px 25px;
+    width: 110px;
+    height: 150px;
+    position: absolute;
+    right: 20px;
+}
+
+.main{
+    padding: 0px 20px 20px 20px;
+    border-top: double 1px lightgreen;
+}
+
+.main p{
+    font-weight: bold;
+    padding: 10px;
+}
+
+h2{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,16,0.4654236694677871) 0%, rgba(0,212,255,0.47102591036414565) 100%);
+    padding: 5px;
+    box-shadow: 0 8px 25px;   
+}
+
+table{
+    border-spacing: 20px 5px;
+}
+
+th{
+    border-bottom: 1px solid black;
+    background-color: rgba(10, 234, 241, .12);
+}
+
+.social{
+    padding-left: 20px;    
+}
+
+.social li{
+    font-size: 50px;    
+    list-style: none;          
+    margin-bottom: 10px;
+    display: list-item;
+}
+
+.icon-linkedin{
+    color: blue;
+}
+
+.icon-github{
+    color: black;
+}
+
+.social a{
+    margin-left: 10px;  
+    text-decoration: none;
+    font-size: 30px;    
+}
+
+.navegador-list a:hover{
+    box-shadow: 0 0 50px 10px rgb(9,121,16);
+    background-color: rgba(9,121,16,0.5);
+    border: none;
+}
+
+.social a:hover{
+    box-shadow: 0 0 50px 10px rgb(9,121,16);
+    background-color: rgba(9,121,16,0.5);
+}

@@ -1,8 +1,3 @@
-/* 
-font-family: 'Pompiere', cursive;
-font-family: 'Staatliches', cursive;
-
- */
 
 *{
     box-sizing: border-box;
@@ -30,19 +25,23 @@ body{
     box-shadow: 0 15px 25px;    
 }
 
-.header img{
-    float: right;
+nav img{    
     width: 120px;
     height: 120px;
     margin-right: 10px;
     border: 2px solid grey;
     border-radius: 100px;
-    box-shadow: 0 15px 25px;   
+    box-shadow: 0 15px 25px;
+    
 }
 
 .navigator{    
     text-align: center;
-    margin-top: 50px;  
+    margin-top: 50px;
+}
+
+.navegador-list{
+    display: inline; 
 }
 
 
@@ -50,6 +49,7 @@ body{
     display: inline;
     padding: 0px 80px;
     text-align: center;
+    
 }
 
 .navegador-list a{    
@@ -64,11 +64,13 @@ body{
 .main{
     padding: 0px 10px 10px 15px;
     margin-top: 50px;
+    border-top: double 1px lightgreen;
 }
 
 .main p{
     font-size: 20px;
     font-weight: bold;
+    
 }
 
 h2{
