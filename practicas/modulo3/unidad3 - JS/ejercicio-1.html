@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>    
+        var distacia = parseInt(prompt("Que distancian desea recorrer?"));
+        var medio = "Ingrese una distancia valida";
+
+        if(distacia > 100000){
+            medio = "Deberias ir en avion";
+        }else if( distacia <= 100000 && distacia > 30000){
+            medio = "Deberias ir en auto"
+        }else if(distacia <= 30000 && distacia > 10000){
+            medio = "Deberias ir en colectivo"
+        }else if(distacia <= 10000 && distacia > 1000){
+            medio = "Deberias ir en bicicleta"
+        }else if(distacia <= 1000 && distacia > 0){
+            medio = "Deberias ir a pie"
+        }
+
+        document.write(medio);
+    </script>
+</body>
+</html>
