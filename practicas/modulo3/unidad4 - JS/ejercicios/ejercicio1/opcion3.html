@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejer-1 opcion3</title>
+    <link rel="stylesheet" href="ejer-1.css">
+</head>
+<body>
+    
+    <div class="caja1" id="boxRed"></div>
+    <div class="caja2" id="boxYellow"></div>
+    <div class="caja3" id="boxGreen"></div>
+</body>
+
+<script>
+    var boxRed = document.getElementById("boxRed");
+    var boxYellow = document.getElementById("boxYellow");
+    var boxGreen = document.getElementById("boxGreen");
+
+    function cambiaColor(box, event, addClass, removeClass1, removeClass2){
+            box.addEventListener(event, () => {
+            document.body.classList.remove(removeClass1, removeClass2);
+            document.body.classList.add(addClass);
+        })
+    }
+
+    cambiaColor(boxRed, 'click', 'rojo','amarillo','verde')
+    cambiaColor(boxYellow, 'click', 'amarillo', 'rojo','verde')
+    cambiaColor(boxGreen, 'click', 'verde', 'rojo','amarillo')
+</script>
+</html>
