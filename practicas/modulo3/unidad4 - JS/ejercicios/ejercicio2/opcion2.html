@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Escriba un comentario de no menos de 10 caracteres.</h1>
+    <form id="form">
+        <label>Comentarios</label>
+        <textarea name="" id="areaComentario" cols="30" rows="10"></textarea>
+</body>
+<script>
+    var mensaje = document.getElementById('areaComentario');
+    var contador = document.getElementById('suma');
+
+    function total(string){
+        return string.value.length;
+    }
+
+    function crearContador(string){
+        var nuevo = document.createElement('span');
+        nuevo.innerText =total(string)+'/100';
+        nuevo.id = "contadorLetra";
+        document.body.appendChild(nuevo);
+    }
+    
+    crearContador(mensaje);
+    mensaje.addEventListener('keydown', function e(){
+        
+    });
+    
+</script>
+</html>

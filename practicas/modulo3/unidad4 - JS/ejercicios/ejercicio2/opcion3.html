@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Escriba un comentario de no menos de 10 caracteres.</h1>
+    <form id="form">
+        <label>Comentarios</label>
+        <textarea name="" id="areaComentario" cols="30" rows="10">sdf</textarea>
+        <span id="contar">1/10</span>
+</body>
+<script>
+    var mensaje = document.getElementById('areaComentario');
+    var contar = document.getElementById('contar');
+
+    function total(string){
+        var x = string.value.length;
+        console.log("func" + x);
+        return x;
+    }
+
+    mensaje.addEventListener('insert', function(){  
+        var nume = total(mensaje);  
+        console.log(nume);
+        contar.textContent(nume);
+    })
+    
+</script>
+</html>

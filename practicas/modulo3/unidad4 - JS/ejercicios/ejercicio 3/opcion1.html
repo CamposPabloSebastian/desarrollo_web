@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var alumnos = [{nombre: 'Juan Gomez', nota: 7}, 
+            {nombre: 'Pedro Rodriguez',nota: 4}, 
+            {nombre: 'Roxana García', nota: 8}, 
+            {nombre: 'Luciano Lopez', nota: 5}, 
+            {nombre: 'Fernanda Gimenez', nota: 6}, 
+            {nombre: 'Florencia Martinez', nota: 10}, 
+            {nombre: 'Raul Sanchez', nota: 7}, 
+            {nombre: 'Sandra Figueroa', nota: 8}
+        ];
+
+        var aprobados = alumnos.filter(alum => alum.nota >= 7);
+
+        var reprobados = alumnos.filter(function(alum){
+            return alum.nota < 7;
+        });
+
+        document.write("Lista de aprobados:<br/>")
+        print(aprobados);
+        document.write("<br/>")
+        document.write("Lista de reprobados:<br/>")
+        print(reprobados);
+
+        /*filter:
+        array.filter(nombreArrayNuevo  => condicion)
+        o 
+        array.filter(funcion(variable)
+        */
+
+        function print(array){
+            for(i=0; i < array.length; i++){
+                document.write(array[i].nombre + ": " + array[i].nota + "<br/>");
+                
+            }
+        }
+        console.log(aprobados);
+        console.log(reprobados);
+    </script>
+</body>
+</html>
