@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ejer-2.css">
+</head>
+<body>
+    <h1>Escriba un comentario de no menos de 10 caracteres.</h1>
+    <form id="form">
+        <label>Comentarios</label>
+        <textarea name="" id="areaComentario" cols="30" rows="10"></textarea>
+        <span id="span">0/100</span>
+        <input type="submit" id="boton">
+</body>
+<script>    
+    var textArea = document.getElementById("areaComentario");
+    var boton = document.getElementById('boton');
+    var contadorTecla = 0;
+
+    textArea.addEventListener('keydown', function(){
+        contadorTecla++;
+        console.log("presionaste tecla")
+        var span = document.getElementById('span');
+        span.textContent = contadorTecla + '/100';
+        campoRequerido(contadorTecla);
+    })
+
+    boton.addEventListener('click', () => {
+        var correcto = contadorTecla >=10 ? true: false;
+        if (correcto){
+            alert('Se envio con exito')
+        }else{
+            alert('Debe completar con almenos 10 carateres')
+        }
+    })
+
+    function campoRequerido(cantidad){
+        if (cantidad > 0 && cantidad < 10){
+            textArea.classList.add('requerido');
+        }else{
+            textArea.classList.remove('requerido');
+        }
+    }
+
+</script>
+</html>
