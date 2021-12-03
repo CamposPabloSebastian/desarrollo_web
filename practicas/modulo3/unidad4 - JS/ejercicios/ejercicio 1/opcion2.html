@@ -39,10 +39,10 @@
         document.body.classList.add('verde');
     })
 
-    function cambiaColor(box, event, addClass, removeClass1, removeClass1){
+    function cambiaColor(box, event, addclass, removeclass1, removeclass1){
             box.addEventListener(event, () => {
-            document.body.classList.remove(removeClass1, removeClass1);
-            document.body.classList.add(addClass);
+            document.body.classList.remove(removeclass1, removeclass1);
+            document.body.classList.add(addclass);
         })
     }
 

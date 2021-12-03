@@ -4,13 +4,23 @@
 }
 
 body{
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5em;
     box-sizing: border-box;
+    font-weight: bold;
 }
 
 .fondo{
     background-image: url("/practicas/modulo3/proyectoFinal/img/fondo (2).jpg");
+}
+
+.video{
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -2;
+    position: fixed;
 }
 
 .empresa{
@@ -237,7 +247,6 @@ footer{
 footer ul{
     font-weight: 100;
     list-style: none;
-    height: ;
 }
 
 i{

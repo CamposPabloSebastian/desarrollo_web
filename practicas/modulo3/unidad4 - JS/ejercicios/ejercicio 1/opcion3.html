@@ -19,10 +19,10 @@
     var boxYellow = document.getElementById("boxYellow");
     var boxGreen = document.getElementById("boxGreen");
 
-    function cambiaColor(box, event, addClass, removeClass1, removeClass2){
+    function cambiaColor(box, event, addclass, removeclass1, removeclass2){
             box.addEventListener(event, () => {
-            document.body.classList.remove(removeClass1, removeClass2);
-            document.body.classList.add(addClass);
+            document.body.classList.remove(removeclass1, removeclass2);
+            document.body.classList.add(addclass);
         })
     }
 
