@@ -6,9 +6,9 @@
     margin-bottom: 50px;
     position: relative;
     z-index: 1;
-    /* background-image: url("/unidad_1-2/duplicados-cra/frontend/public/img/logo.png"); */
-    /* border-bottom: 30px solid transparent;
-    border-image:url("/unidad_1-2/duplicados-cra/frontend/public/img/marco.jpg") 30 30 repeat; */
+    background-image: url(../../../imgNoLevantadas/pizarron.jpg);
+    border-image:url(../../../imgNoLevantadas/marco.jpg) 30 30 repeat;
+    border-bottom: 30px solid transparent;
 }
 
 .presentacion h2{
@@ -45,10 +45,10 @@
     margin-top: auto auto;
     margin: auto auto;
     padding: 3.2%;
-    /* background-image: url("/unidad_1-2/duplicados-cra/frontend/public/img/pizarron.jpg");
+    background-image: url(../../../imgNoLevantadas/pizarron.jpg);
     box-shadow: 0 0 15px 15px rgba(116, 115, 115, 0.656) inset;
     border: 25px solid transparent;
-    border-image:url("/unidad_1-2/duplicados-cra/frontend/public/img/marco.jpg") 30 30 repeat; */
+    border-image:url(../../../imgNoLevantadas/marco.jpg) 30 30 repeat;
 }
 
 

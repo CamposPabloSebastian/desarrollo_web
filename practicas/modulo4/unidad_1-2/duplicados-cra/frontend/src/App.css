@@ -1,3 +1,4 @@
+
 *{
   margin: 0;
   padding: 0;
@@ -10,6 +11,7 @@ body{
   font-weight: bold;
   background-color: aqua;
   box-sizing: border-box;
+  background-image: url(./imgNoLevantadas/fondo.jpg);
 }
 
 .video{

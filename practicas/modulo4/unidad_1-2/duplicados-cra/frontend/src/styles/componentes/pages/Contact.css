@@ -5,6 +5,12 @@ form{
     padding: 0;
 }
 
+.background{
+    padding: 1rem;
+    background-image: url(../../../imgNoLevantadas/formulario.webp);
+    
+}
+
 form label{
     width: 30%;
     display: inline-block;
