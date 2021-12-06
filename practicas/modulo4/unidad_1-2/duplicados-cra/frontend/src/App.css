@@ -4,15 +4,13 @@
 }
 
 body{
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5em;
   box-sizing: border-box;
   font-weight: bold;
+  background-color: aqua;
+  box-sizing: border-box;
 }
-
-/* .fondo{
-  background-image: url("/unidad_1-2/duplicados-cra/frontend/public/img/fondo.jpg");
-} */
 
 .video{
   min-width: 100%;

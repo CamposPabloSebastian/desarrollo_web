@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; //link reemplaza a la etiqueta ancla <a>
+import './../../styles/componentes/layout/Header.css'
 
 const Header = () => {
     return(
