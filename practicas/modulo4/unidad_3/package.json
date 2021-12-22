@@ -1,0 +1,16 @@
+{
+  "name": "unidad_3",
+  "version": "1.0.0",
+  "description": "practica node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pablo campos",
+  "license": "ISC",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "jquery": "^3.6.0",
+    "moment": "^2.29.1"
+  }
+}
