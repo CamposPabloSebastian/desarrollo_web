@@ -1,0 +1,13 @@
+<h1>{{title}}</h1>
+{{#if conocido}}
+    <h2>Sesion iniciada por:{{nombre}}<br><a href="/salir">Cerrar Sesion</a></h2>
+{{/if}}
+
+{{#unless conocido}}
+    <h2>credenciales no existen</h2>
+    <form action="ingresar" method="post">
+    <input type="text" placeholder="Usuario" name="nombre" required="">
+    <button>Enviar</button>
+</form>
+{{/unless}}
+
