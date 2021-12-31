@@ -1,0 +1,24 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-size: 16px;
+  line-height: 1.5em;
+  box-sizing: border-box;
+  font-weight: bold;
+  background-color: aqua;
+  box-sizing: border-box;
+  background-image: url(./imgNoLevantadas/fondo.jpg);
+}
+
+.video{
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -2;
+  position: fixed;
+}

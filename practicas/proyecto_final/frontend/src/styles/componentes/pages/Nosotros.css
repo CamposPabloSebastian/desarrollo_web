@@ -1,0 +1,123 @@
+
+.presentacion{
+    text-align: center;
+    height: 370px;
+    background-color: rgba(12, 11, 11, 0.75);
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 1;
+    background-image: url(../../../imgNoLevantadas/pizarron.jpg);
+    border-image:url(../../../imgNoLevantadas/marco.jpg) 30 30 repeat;
+    border-bottom: 30px solid transparent;
+}
+
+.presentacion h2{
+    color: #fff;
+    font-size: 2.8em;
+    line-height: 1.2em;
+    position: absolute;
+    bottom: 30%;
+    left: 0px;
+    margin-left: 20px;
+}
+
+.personal{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.personas{
+    width: 100%;
+    margin-bottom: 5%;
+    display: flex;
+    position: relative;
+    /* background-color: rgba(116, 115, 115, 0.656); */
+    /* box-shadow: 0 0 15px 15px rgba(116, 115, 115, 0.656); */
+}
+
+.personas img{
+    max-width: 55%;
+}
+
+.descrip{
+    box-sizing: border-box;
+    width: 50%;
+    margin-top: auto auto;
+    margin: auto auto;
+    padding: 3.2%;
+    background-image: url(../../../imgNoLevantadas/pizarron.jpg);
+    box-shadow: 0 0 15px 15px rgba(116, 115, 115, 0.656) inset;
+    border: 25px solid transparent;
+    border-image:url(../../../imgNoLevantadas/marco.jpg) 30 30 repeat;
+}
+
+
+.personas.uno .descrip{
+    width: 65%;
+    height: 65%;
+    left: 32%;
+    bottom: 36%;
+    position: absolute;
+}
+
+.personas.dos img{
+    margin-left: auto;
+}
+
+.personas.dos .descrip{
+    width: 75%;
+    height: 81.5%;
+    right: 27%;
+    bottom: 0%;
+    position: absolute;
+}
+
+.personas.tres .descrip{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+}
+
+.personas.tres h3{
+    /* position: absolute;
+    right: -60%;
+    bottom: 105%; */
+    padding-left: 24%;
+}
+
+.personas.tres img{
+    margin-left: auto;
+    z-index: 1;
+}
+.personas.tres p, h4{
+    width: 60%;
+}
+
+.descrip:last-child p{
+    margin-bottom: 20px;
+}
+
+.descrip i{
+    padding-bottom: 20px;
+    display: block;
+    font-size: 1em;
+    margin: 0;
+}
+
+.descrip span{
+    margin-left: 10px;
+}
+
+.descrip h3, h4{
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+}
+
+.descrip h3{
+    font-size: 2.5em;
+    margin-bottom: 0.8em;
+}
+
+.descrip h4{
+    font-size: 1.5em;
+}

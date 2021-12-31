@@ -1,0 +1,72 @@
+
+.empresa{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+  }
+  
+  header{
+    position: sticky;
+    top: 0;
+    background-color: black;
+    z-index: 2;
+  }
+  
+  
+  .empresa div{
+    display: inline-block;
+    width: 40%;
+    text-align: right;
+  }
+  
+  .empresa nav{
+    width: 70%;
+    display: inline-block;
+    line-height: 100px;
+  }
+  
+  .empresa img{
+    width: 90px;
+  }
+  
+  .empresa h1{
+    display: inline-block;
+    font-size: 2.3em;
+    letter-spacing: 6px;
+    margin: 0 2em 0 0.2em;
+    overflow: hidden;
+    line-height: 90px;
+    color: white;
+  }
+  
+  .lista{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 0;
+    box-sizing: border-box;
+  }
+  
+  .lista li{
+    display: inline-block;
+    font-size: 1em;
+    letter-spacing: 3px;
+    width: 100px;
+    text-align: center;
+    
+  }
+  
+  .lista a{
+    text-decoration: none;
+    color: black;
+    padding: 1px 15px;
+    color: white;
+  }
+  
+  .lista a:hover{
+    font-size: 1.2em;
+  }
+  
+  .activo{
+    background-color: rgb(129, 126, 126);
+  }
