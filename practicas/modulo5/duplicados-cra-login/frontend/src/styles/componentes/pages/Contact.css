@@ -1,0 +1,88 @@
+
+form{
+    width: 60%;
+    margin: 5% auto;
+    padding: 0;
+}
+
+.background{
+    padding: 1rem;
+    background-image: url(../../../imgNoLevantadas/formulario.webp);
+    
+}
+
+form label{
+    width: 30%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding-right: 15px;
+    vertical-align: top;
+}
+
+form p input, select{
+    width: 60%;
+}
+
+form p{
+    width: 50%;
+    display: inline-block;
+    margin-bottom: 3%;
+}
+
+.datos p:nth-child(3),
+.datos p:nth-child(5){
+    float: right;
+}
+
+.datos p:nth-child(3) input,
+.datos p:nth-child(5) input{
+    float: right;
+}
+
+.motivo p:nth-child(3),
+.motivo p:nth-child(4){
+    display: inline-block;
+}
+
+.motivo p:nth-child(4){
+    float: right;
+}
+
+.motivo p:nth-child(4) input{
+    float: right;
+}
+
+.motivo p:last-child label{ 
+    width: 15%;
+    padding: 0;
+}
+
+.motivo p:last-child{
+    width: 100%;
+}
+
+form textarea{
+    width: 84%;
+    resize: none;
+}
+
+fieldset{
+    margin-bottom: 4%;
+}
+
+.campo-ppal{
+    padding: 3%;
+    border: 2px solid black;
+}
+
+.campo-ppal legend{
+    font-size: 1.3em;
+}
+
+input[type="submit"]{
+    width: 10%;
+    margin-left: auto;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+}
