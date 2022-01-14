@@ -1,0 +1,92 @@
+EXTENSIONES VSC
+**extensiones
+live server (go live)
+bracket pair colorized (ayuda a identificar las llaves de cierra con colores)
+flatland monokai theme "color(es un tema...)
+javascrip (es6) para la ayuda de JS
+pretier
+
+*********************  R E A C T  ***************
+**para proyecto desde 0
+npx create-react-app nombreProyecto // npx create-react-app . (si la carpeta proyecto esta creada)
+npx clear-npx-cache si da un error al crear proyecto... luego -> npx create-reac....
+npm i react-router-dom (para trabajar rutas)
+npm i axios (p/peticiones)
+npm start (inicia proyecto, pararse en la carpeta)
+/*********************************************************************
+COMO USAR REACT
+CREAR CARPETAS EN SRC 
+/comopentes_layout -> header.jss, nav.js, footer.js
+pages (las paginas de mi sitio .js)
+styles_componentes_layout -> (estilos de las paginas de mi sitio footer. head.. pag.. nav.. etc.css, )
+class -> ahora se llama -> className
+
+AHORA ARMAR LOS COMPONENTES En comp.layout..archivo.js
+modelo ej:
+
+import React from "react";
+
+const Nav = (props) => {
+    return(
+        <div>hola Nav</div>
+    );
+};
+
+export default Nav;
+
+en app.js
+import Pag/etiqueta from "url";
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'; para la navegacion del sitio
+ejemplo de route en ruteos
+<Route path="/" exact element={<Home/>}/>
+<Route path="/productos" exact element={<Productos/>}/>
+
+en el navegador importar p/la navegacion link
+import { Link } from "react-router-dom";
+
+y remplazar <a> porr <Link>
+
+********************************************************************/
+
+*********************  N O D E  ***************
+
+**iniciar node.js en un proyecto desde 0
+(para ver version de node-> node -v)
+npm init /npm init --y (-yes)
+npm express-generator --view=hbs
+npm nodemon (modif el package.json)
+npm i
+
+
+**p/trabajar con sesiones (login)
+npm express-session (para utilizar las sesiones express)
+
+**p/trabajar con la base de datos
+npm i mysql (p/conectar con BBDD, maneja la conexion e/ NODE y servi MYSQL)
+npm i util (La dependencia util nos va a permitir, entre otras cosas, convertir ciertas funciones que utilizan callbacks al modelo de promesas asincrónico. 
+		formatear cadenas, convertir objetos en cadenas, verificar el tipo de objetos y realizar escritura sincrónica en secuencias de salida, así como algunas
+		mejoras en la herencia de objetos.)
+
+SI CREAMOS EL ARCHIVO .ENV PARA LOS DATOS DE MI BASE DE DATOS HAY QUE HACER
+npm i dotenv (p/conectar el archivo .env con process.env."variable de .env") -> insertar require('dontenv').config()
+
+npm i md5 (encrita cadenas de texto usando el mismo algoritmo que usamos para encriptar la contraseña de nuestro usuario.)
+
+
+*********************  J A V A S C R I P T  ***************
+* comentar codigo:
+	1 linea //
+	+ de 1 linea /* */
+* ; al final no es obligatorio (salvo que tenga mas de 1 instruccion por linea)
+
+* def variables (se puede inicializar sin valor y asignarlo despues)(camelCase)
+	var nombre = "valor"
+	let nombre = "valor" (se usa igual que var)
+	const nombre = "valor"
+HOY EN DIA SE USAN LET Y CONST 
+
+
+
+
+
+
