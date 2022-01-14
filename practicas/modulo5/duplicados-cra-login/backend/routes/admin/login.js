@@ -30,7 +30,7 @@ router.post('/', async (req, res, next)=>{
       if(data != undefined){
         req.session.id_usuario = data.id; // este data.id es el nombre de la colum en base de datos, el data trae los datos de la base de datos
         req.session.nombre = data.usuario;
-        res.redirect('product') //no repetir admin/producto xc no encuentra la ruta
+        res.redirect('/admin/product') 
       }else{
         res.render('admin/login', {
           layout: 'admin/layout', 
