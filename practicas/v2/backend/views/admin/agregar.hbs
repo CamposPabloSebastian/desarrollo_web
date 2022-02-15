@@ -1,0 +1,34 @@
+<main class="contenido">
+    <div><h3 style="text-align: center;">Agregar nuevo producto</h3></div>
+    <form class="nuevo-prod" action="/admin/productos/agregar" method="post">
+        <div class="row">
+        <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Marca</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control form-control-lg" id="colFormLabelLg" placeholder="marca del equipo" name="marca">
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Modelo</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control form-control-lg" id="colFormLabelLg"
+                placeholder="modelo del equipo" name="modelo">
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Descripcion</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control form-control-lg" id="colFormLabelLg"
+                placeholder="breve descripccion" name="descripcion">
+        </div>
+    </div>
+    <br>
+    <input type="submit" value="Guardar">
+    <br><br>
+    {{#if error}}
+        {{message}}
+    {{/if}}
+    </form>
+    
+</main>
