@@ -1,6 +1,6 @@
 <main class="contenido">
-  <div><h3 style="text-align: center;">Agregar nuevo producto</h3></div>
-  <form class="nuevo-prod" action="/admin/productos/agregar" method="post">
+  <div><h3 style="text-align: center;">Modificar producto</h3></div>
+  <form class="nuevo-prod" action="/admin/productos/modificar" method="post">
     <br>
     <div class="row">
       <div class="col-sm-10">
@@ -24,7 +24,7 @@
           type="text"
           class="form-control form-control-lg"
           id="colFormLabelLg"
-          placeholder="marca del equipo"
+          value="{{product.marca}}"
           name="marca"
         />
       </div>
@@ -40,7 +40,7 @@
           type="text"
           class="form-control form-control-lg"
           id="colFormLabelLg"
-          placeholder="modelo del equipo"
+          value="{{product.modelo}}"
           name="modelo"
         />
       </div>
@@ -56,7 +56,7 @@
           type="text"
           class="form-control form-control-lg"
           id="colFormLabelLg"
-          placeholder="breve descripccion"
+          value="{{product.descripcion}}"
           name="descripcion"
         />
       </div>

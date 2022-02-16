@@ -9,24 +9,31 @@
     </div>
   </div>
   <div class="btn-agregar">
-    <a class="boton" href="/admin/productos/agregar">Añadir <i class="fas fa-plus-circle"></i></a>
+    <a class="boton" href="/admin/productos/agregar">Añadir
+      <i class="fas fa-plus-circle"></i></a>
   </div>
   <div class="items">
     {{#each productos}}
-    <div>
-      <div class="item">
-        <img src="/images/logo.png" alt="" />
-        <span class="modelo">{{marca}} - {{modelo}}</span>
-        <div class="detalle">
-          <h2>Detalle</h2>
-          <p>{{descripcion}}</p>
+      <div>
+        <div class="item">
+          <img src="/images/logo.png" alt="" />
+          <span class="modelo">{{marca}} - {{modelo}}</span>
+          <div class="detalle">
+            <h2>Detalle</h2>
+            <p>{{descripcion}}</p>
+          </div>
+        </div>
+        <div class="botones btn-prod">
+          <a
+            class="boton-producto a1"
+            href="/admin/productos/modificar/{{id_producto}}"
+          ><i class="far fa-edit"></i></a>
+          <a
+            class="boton-producto"
+            href="/admin/productos/eliminar/{{id_producto}}"
+          ><i class="far fa-trash-alt"></i></a>
         </div>
       </div>
-      <div class="botones btn-prod">
-        <a class="boton-producto a1" href=""><i class="far fa-edit"></i></a>
-        <a class="boton-producto" href=""><i class="far fa-trash-alt"></i></a>
-      </div>
-    </div>
     {{/each}}
   </div>
 

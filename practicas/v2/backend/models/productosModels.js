@@ -1,17 +1,17 @@
 var pool = require('./db');
 
-async function getProductos(){
-    try{
+async function getProductos() {
+    try {
         var query = 'select * from productos';
         var rows = await pool.query(query);
         console.log(rows)
         return rows;
-    }catch (error){
+    } catch (error) {
         console.log(error);
     }
 }
 
-async function insertarProducto(obj){
+async function insertarProducto(obj) {
     try {
         var query = 'insert into productos set ?';
         var rows = await pool.query(query, [obj]);
@@ -22,4 +22,36 @@ async function insertarProducto(obj){
     }
 }
 
-module.exports = {getProductos, insertarProducto};
+//para eliminar producto
+async function deleteProductoById(id) {
+    try {
+        var query = 'delete from productos where id_producto = ?';
+        var rows = await pool.query(query, [id]);
+        return rows;
+    } catch (error) {
+        console.log(error);
+        throw error;
+    }
+}
+
+//para modificar producto (trae el producto de la base de datos)
+
+async function getProductoById(id) {
+    var query = 'select * from productos where id_producto = ?';
+    var rows = await pool.query(query, [id]);
+    return rows[0];
+}
+
+//para modificar producto (actualiza producto en la base de datos)
+
+async function editProductoById(obj, id) {
+    try {
+        var query = 'update productos set ? where id_producto = ?';
+        var rows = await pool.query(query, [obj, id]);
+        return rows;
+    } catch (error) {
+        throw error;
+    }
+}
+
+module.exports = { getProductos, insertarProducto, deleteProductoById, getProductoById, editProductoById};

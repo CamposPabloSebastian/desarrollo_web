@@ -286,8 +286,7 @@ h2{
   /************PRODUCTOS****************/
 
   .items{
-    width: 100%;
-    
+    width: 100%;    
     /* padding-top: 30px; */
     /* position: relative; */
     display: flex;
@@ -807,4 +806,8 @@ fieldset{
 
 .nuevo-prod{
     font-size: 1.2rem;
+}
+
+.error{
+    color: red;
 }
