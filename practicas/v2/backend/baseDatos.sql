@@ -93,8 +93,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 
 INSERT INTO `usuarios` (`id`, `usuario`, `password`) VALUES
 (1, 'pablo', '81dc9bdb52d04dc20036dbd8313ed055'),
-(2, 'agostina', '81dc9bdb52d04dc20036dbd8313ed055')
-(3, 'pepe', '1234');
+(2, 'agostina', '81dc9bdb52d04dc20036dbd8313ed055');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
