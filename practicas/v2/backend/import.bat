@@ -22,4 +22,4 @@ set "user=%substring::=" & set "x=%"
 echo User: 		%user%
 echo User: 		%user% >> config.txt
 
-mysql -u %user% -p%password% -h %host% -D %dbname%  < %1
+mysql -u %user%  -h %host% -D %dbname%  < %1
