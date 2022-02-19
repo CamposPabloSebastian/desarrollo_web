@@ -22,4 +22,4 @@ set "user=%substring::=" & set "x=%"
 echo User: 		%user%
 echo User: 		%user% >> config.txt
 
-mysql -u %user% -p%password% -h %host% -D %dbname%  < %1
+C:\wamp\bin\mysql\mysql5.5.24\bin\mysql -u %user% -p%password% -h %host% -D %dbname%  < %1
