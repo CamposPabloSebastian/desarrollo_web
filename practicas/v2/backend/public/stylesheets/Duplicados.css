@@ -19,7 +19,7 @@
     width: var(--max-width-display);
     min-width: 200px;
     font-size: 1.4rem; /*equivale a 12px*/
-    background-image: url('./img/fondo.jpg');
+    /* background-image: url('./img/fondo.jpg'); */
   }
   
   
