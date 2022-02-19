@@ -45,8 +45,8 @@ app.use(session({
 //ahora hago que pase una seguridad (osea que tenga que estar en una variable de sesion para poder pasar)
 secured = async (req, res, next) =>{
   try {
-    // console.log('este es el app.. deberia venir el log de session')
-    // console.log(req.session.id_usuario); //este id_usuario es una variable de sesion cre. no viene de la base de datos ni de otro lado
+    console.log('este es el app.. deberia venir el log de session')
+    console.log(req.session.id_usuario); //este id_usuario es una variable de sesion cre. no viene de la base de datos ni de otro lado
     if(req.session.id_usuario){
       next();
     }else{
