@@ -1,8 +1,8 @@
-var msql = require('mysql')
+var msql= require('mysql')
 var util = require('util')
 require('dotenv').config()
 
-var dbconfig = {
+var pool = msql.createPool({
     connectionLimit: 10,
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
@@ -12,9 +12,7 @@ var dbconfig = {
     // user: 'bb0857b524d028',
     // pass: 'a646f1c7',
     // database: 'heroku_29409a6ce3bfee7' 
-}
-
-var pool = msql.createPool(dbconfig);
+});
 
 pool.query = util.promisify(pool.query)
 
