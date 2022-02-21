@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 19, 2022 at 06:38 PM
+-- Generation Time: Feb 21, 2022 at 03:41 PM
 -- Server version: 5.5.24-log
 -- PHP Version: 5.4.3
 
@@ -15,6 +15,8 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8 */;
+
+CREATE DATABASE IF NOT EXISTS `duplicados`;
 
 --
 -- Database: `duplicados`
@@ -61,7 +63,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `usuario` varchar(50) NOT NULL,
   `password` varchar(80) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `usuarios`
